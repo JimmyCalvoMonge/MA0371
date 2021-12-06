@@ -7,4 +7,4 @@ Some elementary functions for simple calculations in abstract algebra (group the
 The purpose of the course is to teach students how to use the COCALC tool to perform mathematical calculations that arise in Group/Ring/Field theory.
 
 All code present ought to be executed in COCALC.
-Contact: [mailto](mailto:jimjocamon94@gmail.com)
+Contact: [Jimmy Calvo Monge](mailto:jimjocamon94@gmail.com)
