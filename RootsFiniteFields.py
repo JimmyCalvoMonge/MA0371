@@ -1,0 +1,18 @@
+#A polynomial with coefficients in Fp[x] has roots in some F_{p^n}. This is because the algebraic closure of F_p
+#equals the (inverse) union of all the F_{p^n}.
+
+#This function finds the first field F_{p^n} in which a polynomial f in F_p[x] has a root.
+#It is very simple.
+
+def first_field_with_roots(f,p):
+    R.<x>= PolynomialRing(GF(p),'x')
+    if(f in R):
+       n=0
+       v=len(f.roots())
+       while v==0:
+             H.<x>= PolynomialRing(GF(p^(n+1)),'x')
+             g=H(f)
+             v=len(g.roots())
+             n=n+1
+       return(n)
+    else: print('El polinomio debe estar en F_p[x]')
